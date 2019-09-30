@@ -1,3 +1,5 @@
+#Spencer Paquette
+#September 30 2019
 import random
 
 wordDataBase = ["downtown", "wound", "queen", "rice", "street", "grip", "flower", "marble", "invention", "branch", "attraction", "metal", "thread", "fowl", "tank", "need", "snakes", "letters", "price", "education", "rabbit", "wilderness", "respect", "doctor", "teeth", "gate", "apparatus", "ear", "desire", "knee", "tramp", "crowd", "arithmetic", "yarn", "loss", "babies", "memory", "thunder", "amusement", "debt", "foot", "pail", "linen", "powder", "drop", "zephyr", "distribution", "measure", "sun", "fall", "anger", "coach", "icicle", "group", "bite", "van", "hate", "chess", "air", "toe", "cellar", "alarm", "earthquake", "match", "sound", "story", "fly", "legs", "baseball","hat", "front", "fear", "condition", "circle", "thought", "top", "dad", "veil", "limit", "pocket", "calculator", "winter", "playground", "basketball", "self", "station", "actor", "dogs", "skin", "acoustics", "talk", "flight", "water", "maid", "wall", "nut", "steam", "advice", "property", "riddle"]
@@ -7,7 +9,7 @@ randWord = ""
 print("Welcome to Jumbler")
 print("The scrambled word is")
 
-
+#Scrambles words by picking a random letter removing it from the string and putting in a new string
 def scrambler():
     scrambled = ""
     randWord = wordDataBase[random.randint(0,99)]
@@ -40,7 +42,8 @@ def scrambler():
     if(scrambled == randWord):
         scrambled()
     print(scrambled)
-    
+
+#This While loop makes the game functional
     while(1):
         answer = input("What is the word:")
         if(answer == randWord):
